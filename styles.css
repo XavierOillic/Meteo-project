@@ -1,0 +1,192 @@
+@charset "UTF-8";
+/* CSS Document */
+
+BODY {
+	dispay:flex;
+	background-color: #434950;
+}
+
+CONTAINER{
+	height: 536px;
+	width: 700px;
+}
+
+FOOTER {
+	height:30px;
+	width:536px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left:10px;
+}
+
+img{}
+
+h1{
+	color:#EDEFF4;
+	font-size: 50px;
+	position:absolute;
+	font-family:"Arial";
+	margin-top: 20px;
+}
+
+h2{
+	position:relative;
+	margin-top:85px;
+	color:rgba(154,166,242,0.8);
+	font-size: 110px;
+	font-family:"Cometbus";
+}
+
+h3 {
+	color:#EDEFF4;
+	font-size: 30px;
+	font-family:"Arial";
+}
+
+h4 {
+	color:#201F1F;
+	font-size: 25px;
+	font-family:"Arial";
+	margin: 15px;
+}
+
+h5 {
+	color:#201F1F;
+	font-size: 28px;
+	font-family:"Cometbus";
+	margin: 15px;
+}
+
+h6 {
+	font-size: 16px;
+	color:#DBE1ED;
+	font-family:"Denne's Old Handwriting", "Dirty Ames Dirty Ames", "DIRTY CLASSIC";
+	margin-top: 10px;
+}
+
+table{
+	height:auto;
+	width:auto;
+	display:flex;/** permet de centrer les éléments dans la Div avec Justify et Align  **/
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+tr{
+	display:flex;/** permet de centrer les éléments dans la Div avec Justify et Align  **/
+	justify-content: center;
+	align-items: center;
+}
+
+td{
+	text-justify: auto;
+	vertical-align: middle;
+	margin:auto;
+}
+
+.soleil {
+	margin-top: 20px;
+	height: 130px;
+	width: 130px;
+}
+
+.encart_h1 {
+	z-index: 2;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	height: 200px; 
+	Width: 450px;
+	background-color: rgba(4,4,4,0.5);
+	border-radius: 5px;
+	display:flex;/** permet de centrer les éléments dans la Div avec Justify et Align  **/
+	justify-content: center;
+	/**align-items: center;**/
+	border: solid 1px #ffffff;
+}
+/**.titreh2{
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px; 
+	Width: 450px;
+	display:flex; permet de centrer les éléments dans la Div avec Justify et Align
+	justify-content: center;
+	align-items: center;
+}**/
+
+
+
+
+.content{
+	background-color: rgba(255,255,255,0.5);
+	display: flex;
+	flex-wrap: wrap;
+  	justify-content: center;
+	height: 420px;
+	width: 450px;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	box-shadow: 5px 5px 20px -5px #ffffff;
+}
+
+.ciel{
+	top: 15px;
+	height: 150px;
+	width: 450px;
+	display: flex;/** permet de centrer les éléments dans la Div avec Justify et Align  **/
+	justify-content: center;
+	align-items: center;
+}
+
+.donnees_meteo{
+	height: 220px;
+	width: 450px;
+	top: 150px;
+	justify-content: center;
+}
+
+/*DEBUT MENU SLIDESHOW*/
+
+
+.header{
+	z-index: 1;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 5px black;
+	border-radius: 15px;
+	width: 536px;
+	height: 700px;
+	background-color: #71819B;
+	background-size: contain; /** pour que l'image occupe tout l'espace de la Div **/
+	box-shadow: 10px 15px 10px -5px #232021;
+	animation : fondu 120s linear infinite both; /** l'infinite pour la repetition infinie de l'anim', le E&O pour prendre enc ompte le debit et la fin de la transition des images  **/
+}
+
+.diaporama {
+	max-height: 700px;
+	max-width: 536px;
+}
+/**.slide_foto:hover, {
+	animation-play-state:paused; pour faire une pause quand on passe la souris dessus
+}
+**/
+
+@keyframes fondu{
+	0%{background-image:url("image/tharon_plage.png")}
+	17%{background-image:url("image/rose.png")}
+	34%{background-image:url("image/tharon_plage_2.png")}
+	51%{background-image:url("image/erdre.png")}
+	67%{background-image:url("image/oiseau.png")}
+	83%{background-image:url("image/paris.png")}
+	100%{background-image:url("image/vallee_cens.png")}
+}
+
+
+/*FIN MENU SLIDESHOW*/
+
+
+
